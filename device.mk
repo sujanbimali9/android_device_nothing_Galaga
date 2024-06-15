@@ -175,7 +175,9 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     FrameworkResOverlayGalaga \
-    SettingsResOverlayGalaga
+    SettingsResOverlayGalaga \
+    TetheringConfigOverlayGalaga \
+    WifiOverlayGalaga
 
 # Power
 PRODUCT_PACKAGES += \
