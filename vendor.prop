@@ -8,6 +8,9 @@ ro.audio.usb.period_us=16000
 ro.vendor.mtk_hifiaudio_support=1
 ro.vendor.mtk_audio_tuning_tool_ver=V1
 
+# Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
+
 # Display
 ro.vendor.display.array.lux=0,1,4,10,25,60,150,390,620,750,1000,1300,1700,2800,3500,4500,7000,8000
 ro.vendor.display.array.backlight=360,360,511,821,1154,1273,1324,1471,1599,1671,1832,1976,2119,2358,2436,2881,2881,3442
