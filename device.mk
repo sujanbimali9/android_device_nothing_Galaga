@@ -177,6 +177,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Vibrator
 $(call soong_config_set, vibrator, vibratortargets, vibratoraidlV2target)
+$(call soong_config_set,qti_vibrator,use_effect_stream,true)
+$(call soong_config_set,qti_vibrator,use_effect_stream_strength,true)
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.impl \
     vendor.qti.hardware.vibrator.service
