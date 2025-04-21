@@ -166,3 +166,13 @@ vendor/etc/smartpa_param/tfa98xx_voice.bin
 
 # Audio firmware
 vendor/firmware/tfa98xx.cnt
+
+# Bluetooth (Driver)
+vendor/lib64/libbt-vendor.so
+vendor/lib64/libbluetooth_mtk.so
+
+# Bluetooth (Firmware)
+vendor/firmware/BT_FW.cfg
+vendor/firmware/soc7_0_ram_bt_1_1_hdr.bin
+vendor/firmware/soc7_0_ram_bt_1a_1_hdr.bin
+vendor/firmware/soc7_0_ram_bt_1b_1_hdr.bin
