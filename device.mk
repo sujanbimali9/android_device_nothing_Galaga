@@ -136,6 +136,10 @@ PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Media
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal \
