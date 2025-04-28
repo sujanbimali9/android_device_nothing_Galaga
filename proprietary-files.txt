@@ -421,6 +421,13 @@ vendor/lib64/libksensor.so
 vendor/lib64/libsensor_extension.so
 vendor/lib64/vendor.noth.hardware.sensor.sensor_extension-V1-ndk.so
 
+# Tether Offload
+vendor/bin/hw/tetheroffloadservice
+vendor/etc/init/android.hardware.tetheroffload-V1-service.rc
+vendor/etc/vintf/manifest/android.hardware.tetheroffload-V1-service.xml
+vendor/lib64/libforkexecwrap.so
+vendor/lib64/libifcutils_mtk.so
+
 # VPU
 vendor/lib64/libmvpu_cic_ci_compiler_25.so
 vendor/lib64/libmvpu_cic_ci_compiler.so
