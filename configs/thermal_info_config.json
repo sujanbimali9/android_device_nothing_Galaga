@@ -1,0 +1,469 @@
+{
+    "Sensors":[
+        {
+            "Name": "cpu-little-core0",
+            "Type": "CPU",
+            "HotThreshold":[
+                "NAN",
+                "NAN",
+                "NAN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "85.0",
+            "Multiplier": 0.001
+        },
+	{
+            "Name": "cpu-little-core1",
+            "Type": "CPU",
+            "HotThreshold":[
+                "NAN",
+                "NAN",
+                "NAN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "85.0",
+            "Multiplier": 0.001
+        },
+	{
+            "Name": "cpu-little-core2",
+            "Type": "CPU",
+            "HotThreshold":[
+                "NAN",
+                "NAN",
+                "NAN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "85.0",
+            "Multiplier": 0.001
+        },
+	{
+            "Name": "cpu-little-core3",
+            "Type": "CPU",
+            "HotThreshold":[
+                "NAN",
+                "NAN",
+                "NAN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "85.0",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "cpu-big-core0-1",
+            "Type": "CPU",
+            "HotThreshold":[
+                "NAN",
+                "NAN",
+                "NAN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "85.0",
+            "Multiplier": 0.001
+        },
+	{
+            "Name": "cpu-big-core0-2",
+            "Type": "CPU",
+            "HotThreshold":[
+                "NAN",
+                "NAN",
+                "NAN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "85.0",
+            "Multiplier": 0.001
+        },
+	{
+            "Name": "cpu-big-core1-1",
+            "Type": "CPU",
+            "HotThreshold":[
+                "NAN",
+                "NAN",
+                "NAN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "85.0",
+            "Multiplier": 0.001
+        },
+	{
+            "Name": "cpu-big-core1-2",
+            "Type": "CPU",
+            "HotThreshold":[
+                "NAN",
+                "NAN",
+                "NAN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "85.0",
+            "Multiplier": 0.001
+        },
+	{
+            "Name": "cpu-big-core2-1",
+            "Type": "CPU",
+            "HotThreshold":[
+                "NAN",
+                "NAN",
+                "NAN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "85.0",
+            "Multiplier": 0.001
+        },
+	{
+            "Name": "cpu-big-core2-2",
+            "Type": "CPU",
+            "HotThreshold":[
+                "NAN",
+                "NAN",
+                "NAN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "85.0",
+            "Multiplier": 0.001
+        },
+	{
+            "Name": "cpu-big-core3-1",
+            "Type": "CPU",
+            "HotThreshold":[
+                "NAN",
+                "NAN",
+                "NAN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "85.0",
+            "Multiplier": 0.001
+        },
+	{
+            "Name": "cpu-big-core3-2",
+            "Type": "CPU",
+            "HotThreshold":[
+                "NAN",
+                "NAN",
+                "NAN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "85.0",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "gpu",
+            "Type": "GPU",
+            "HotThreshold": [
+                "NAN",
+                "NAN",
+                "NAN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "85.0",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "battery",
+            "Type": "BATTERY",
+            "HotThreshold": [
+                "NAN",
+                "NAN",
+                "NAN",
+                50.0,
+                55.0,
+                59.0,
+                60.0
+            ],
+            "VrThreshold": "50.0",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "ap_ntc",
+            "Type": "SKIN",
+            "HotThreshold": [
+                "NAN",
+                39.0,
+                43.0,
+                44.0,
+                50.0,
+                54.0,
+                63.0
+            ],
+            "VrThreshold": "50.0",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "vtskin1",
+            "Type": "SKIN",
+            "HotThreshold": [
+                "NAN",
+                39.0,
+                43.0,
+                44.0,
+                50.0,
+                54.0,
+                63.0
+            ],
+            "VrThreshold": "50.0",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "vtskin2",
+            "Type": "SKIN",
+            "HotThreshold": [
+                "NAN",
+                39.0,
+                43.0,
+                44.0,
+                50.0,
+                54.0,
+                63.0
+            ],
+            "VrThreshold": "50.0",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "vtskin3",
+            "Type": "SKIN",
+            "HotThreshold": [
+                "NAN",
+                39.0,
+                43.0,
+                44.0,
+                50.0,
+                54.0,
+                63.0
+            ],
+            "VrThreshold": "50.0",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "vtskin4",
+            "Type": "SKIN",
+            "HotThreshold": [
+                "NAN",
+                39.0,
+                43.0,
+                44.0,
+                50.0,
+                54.0,
+                63.0
+            ],
+            "VrThreshold": "50.0",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "vtskin5",
+            "Type": "SKIN",
+            "HotThreshold": [
+                "NAN",
+                39.0,
+                43.0,
+                44.0,
+                50.0,
+                54.0,
+                63.0
+            ],
+            "VrThreshold": "50.0",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "vtskin6",
+            "Type": "SKIN",
+            "HotThreshold": [
+                "NAN",
+                39.0,
+                43.0,
+                44.0,
+                50.0,
+                54.0,
+                63.0
+            ],
+            "VrThreshold": "50.0",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "vtskin-max",
+            "Type": "SKIN",
+            "HotThreshold": [
+                "NAN",
+                39.0,
+                43.0,
+                44.0,
+                50.0,
+                54.0,
+                63.0
+            ],
+            "VrThreshold": "50.0",
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "nrpa_ntc",
+            "Type": "POWER_AMPLIFIER",
+            "HotThreshold": [
+                "NAN",
+                "NAN",
+                "NAN",
+                68.0,
+                90.0,
+                100.0,
+                110.0
+            ],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "ltepa_ntc",
+            "Type": "POWER_AMPLIFIER",
+            "HotThreshold": [
+                "NAN",
+                "NAN",
+                "NAN",
+                68.0,
+                90.0,
+                100.0,
+                110.0
+            ],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "soc-bot1",
+            "Type": "SOC",
+            "HotThreshold": [
+                "NAN",
+                "NAN",
+                "NAN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "soc-bot2",
+            "Type": "SOC",
+            "HotThreshold": [
+                "NAN",
+                "NAN",
+                "NAN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "soc-top1",
+            "Type": "SOC",
+            "HotThreshold": [
+                "NAN",
+                "NAN",
+                "NAN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "soc-top2",
+            "Type": "SOC",
+            "HotThreshold": [
+                "NAN",
+                "NAN",
+                "NAN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "soc_max",
+            "Type": "SOC",
+            "HotThreshold": [
+                "NAN",
+                "NAN",
+                "NAN",
+                85.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "NAN",
+            "Multiplier": 0.001
+        }
+    ],
+    "CoolingDevices": [
+        {
+            "Name": "devfreq-13000000.mali",
+            "Type": "GPU"
+        },
+        {
+            "Name": "charger-cooler",
+       	    "Type": "BATTERY"
+        },
+        {
+            "Name": "lcd-backlight",
+       	    "Type": "COMPONENT"
+        },
+        {
+            "Name": "wifi-cooler",
+            "Type": "COMPONENT"
+        },
+        {
+            "Name": "flashlight_cooler",
+            "Type": "COMPONENT"
+        }
+    ]
+}
