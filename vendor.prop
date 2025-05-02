@@ -145,6 +145,12 @@ vendor.mtk.vdec.waitkeyframeforplay=9
 vendor.mtk_thumbnail_optimization=true
 vendor.video.framework.thumbnail.SurfaceMode=1
 
+# Neural Networks
+ro.vendor.mtk_nn_baseline_support=1
+ro.vendor.mtk_nn_support=1
+ro.vendor.mtk_nn_quant_preferred=1
+ro.vendor.mtk_nn.option=A,B,C,D,E,F,G,Z
+
 # NTF
 ro.vendor.nothing.feature.base=0x1004458438124a040126b4247b97ffL
 ro.vendor.nothing.feature.diff.product.GalagaEEA=0x8000000000000000000000L
