@@ -30,6 +30,11 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# Bootcontrol
+PRODUCT_PACKAGES += \
+    com.android.hardware.boot \
+    android.hardware.boot-service.default_recovery
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.mt6878 \
