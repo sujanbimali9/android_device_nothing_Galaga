@@ -71,6 +71,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lock'),
     'vendor/lib64/mt6878/libneuron_adapter_mc.so': blob_fixup()
         .clear_symbol_version('AHardwareBuffer_describe'),
+    'vendor/lib64/libntcamskia.so': blob_fixup()
+        .add_needed('libnativewindow.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
