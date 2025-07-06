@@ -209,6 +209,9 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
     <string name="config_mainBuiltInDisplayCutout">M 0,0 L -20, 0 L -20, 26 L 20, 26 L 20, 0 Z</string>
+
+    <!-- Shutdown if the battery temperature exceeds (this value * 0.1) Celsius. -->
+    <integer name="config_shutdownBatteryTemperature">580</integer>
     
     <!-- The list of packages to automatically opt in of fresh rate suppressing by small area
          detection. Format of this array should be packageName:threshold and threshold value should
