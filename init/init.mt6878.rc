@@ -831,8 +831,6 @@ on boot
     chown system system /sys/class/leds/blue/trigger
 
     # add for aac richtap vibration BEE-47
-    chmod 0666 /dev/aac_richtap
-    chown system system /dev/aac_richtap
     #chmod 0666 /sys/class/leds/vibrator_nt/enalbe
     #chown system system /sys/class/leds/vibrator_nt/enalbe
     chmod 0666 /sys/class/leds/vibrator_nt/activate
@@ -1197,8 +1195,6 @@ on property:sys.boot_completed=1
 
     # stop bootprof
     write /proc/bootprof 0
-    # add for aac richtap vibration AERO-119
-    setprop vendor.haptic.calibrate.done 1
 
 #service dpfd /vendor/bin/dpfd
 #	user root
