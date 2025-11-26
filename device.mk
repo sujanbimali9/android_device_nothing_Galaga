@@ -27,6 +27,20 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.mt6878 \
+    fstab.mt6878.vendor_ramdisk \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6878.rc \
+    init.mt6878.usb.rc \
+    init.mtkgki.rc \
+    init.project.rc \
+    init.sensor_2_0.rc \
+    ueventd.mt6878.rc \
+    init.recovery.mt6878.rc
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
