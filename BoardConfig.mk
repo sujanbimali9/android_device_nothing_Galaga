@@ -33,6 +33,54 @@ TARGET_CPU_VARIANT := cortex-a76
 TARGET_BOOTLOADER_BOARD_NAME := Galaga
 TARGET_NO_BOOTLOADER := true
 
+# Kernel
+BOARD_KERNEL_BASE := 0xffff9000
+BOARD_KERNEL_OFFSET := 0x00008000
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_TAGS_OFFSET := 0x3d74e06f
+BOARD_RAMDISK_OFFSET := 0x66f07000
+BOARD_BOOT_HEADER_VERSION := 4
+BOARD_INIT_BOOT_HEADER_VERSION := 4
+
+BOARD_MKBOOTIMG_ARGS += \
+    --dtb_offset $(BOARD_TAGS_OFFSET) \
+    --header_version $(BOARD_BOOT_HEADER_VERSION) \
+    --kernel_offset $(BOARD_KERNEL_OFFSET) \
+    --ramdisk_offset $(BOARD_RAMDISK_OFFSET) \
+    --tags_offset $(BOARD_TAGS_OFFSET)
+
+BOARD_MKBOOTIMG_INIT_ARGS += \
+    --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
+
+BOARD_RAMDISK_USE_LZ4 := true
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_USES_GENERIC_KERNEL_IMAGE := true
+BOARD_KERNEL_IMAGE_NAME := Image.gz
+
+# Kernel (cmdline)
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
+BOARD_KERNEL_CMDLINE += log_buf_len=1M
+BOARD_BOOTCONFIG += androidboot.serialconsole=0
+BOARD_BOOTCONFIG += androidboot.selinux=permissive
+
+# Kernel (prebuilt)
+TARGET_KERNEL_SOURCE := $(DEVICE_PATH)-kernel/headers/
+TARGET_NO_KERNEL_OVERRIDE := true
+TARGET_FORCE_PREBUILT_KERNEL := true
+BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)-kernel/dtb
+PRODUCT_COPY_FILES += \
+	$(DEVICE_PATH)-kernel/Image.gz:kernel
+
+# Kernel modules
+BOARD_SYSTEM_KERNEL_MODULES := $(wildcard $(DEVICE_PATH)-kernel/system/*.ko)
+BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)-kernel/system/modules.load))
+BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(DEVICE_PATH)-kernel/vendor/*.ko)
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)-kernel/vendor/modules.load))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(wildcard $(DEVICE_PATH)-kernel/ramdisk/*.ko)
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)-kernel/ramdisk/modules.load))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)-kernel/ramdisk/modules.load.recovery))
+BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD) $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)
+
 # Partitions
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
