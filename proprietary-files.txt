@@ -255,6 +255,10 @@ vendor/lib64/mt6878/libdpframework.so;SYMLINK=vendor/lib64/libdpframework.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 
+# Kernel
+vendor/bin/init.insmod.sh
+vendor/etc/init.insmod.mt6878.cfg
+
 # Media
 vendor/lib64/libadpcmdec_mtk.so
 vendor/lib64/libbwc.so
