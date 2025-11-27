@@ -36,6 +36,11 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.security.keymint-V3-ndk.so', 'android.hardware.security.keymint-V4-ndk.so'),
     'vendor/lib64/hw/mt6878/vendor.mediatek.hardware.pq_aidl-impl.so': blob_fixup()
         .add_needed('libui_shim.so'),
+('vendor/lib64/libcam.hal3a.so',
+     'vendor/lib64/libcam.hal3a.ctrl.so',
+     'vendor/lib64/libmtkcam_taskmgr.so',
+     'vendor/lib64/hw/hwcomposer.mtk_common.so'): blob_fixup()
+        .add_needed('libprocessgroup_shim.so'),
     'vendor/lib64/mt6878/lib3a.ae.stat.so': blob_fixup()
         .add_needed('liblog.so'),
     'vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so': blob_fixup()
