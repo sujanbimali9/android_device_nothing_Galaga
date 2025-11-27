@@ -187,6 +187,10 @@ vendor/firmware/soc7_0_ram_bt_1_1_hdr.bin
 vendor/firmware/soc7_0_ram_bt_1a_1_hdr.bin
 vendor/firmware/soc7_0_ram_bt_1b_1_hdr.bin
 
+# Chipset info
+vendor/bin/chipinfo
+vendor/etc/init/chipinfo_init.rc
+
 # Connectivity
 vendor/bin/conninfra_loader
 vendor/bin/wmt_launcher

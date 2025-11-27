@@ -132,6 +132,12 @@ ro.vendor.composer_version=3.2
 # Keystore
 ro.hardware.kmsetkey=trustonic
 
+# Platform
+ro.board.platform=mt6878
+ro.vendor.mediatek.platform=MT6878
+ro.soc.manufacturer=Mediatek
+ro.soc.model=MT6878
+
 # Media
 media.c2.dmabuf.padding=512
 media.stagefright.thumbnail.prefer_hw_codecs=true
