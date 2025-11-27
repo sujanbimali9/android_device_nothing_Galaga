@@ -185,3 +185,7 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.surface_flinger.protected_contents=true
 ro.surface_flinger.uclamp.min=160
 ro.surface_flinger.has_wide_color_display=true
+
+# TEE
+ro.vendor.mtk_tee_gp_support=1
+ro.vendor.mtk_trustonic_tee_support=1
