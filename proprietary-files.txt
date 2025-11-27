@@ -503,6 +503,9 @@ vendor/lib64/vendor.trustonic.tee.tui@1.0.so
 vendor/lib64/vendor.trustonic.tee@1.0.so
 vendor/lib64/vendor.trustonic.tee@1.1.so
 
+# Vibrator
+vendor/firmware/haptic_config.bin
+
 # WiFi
 vendor/bin/netdagent
 vendor/bin/wlan_assistant
