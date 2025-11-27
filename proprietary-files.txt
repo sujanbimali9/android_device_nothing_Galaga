@@ -1,5 +1,11 @@
 # All proprietary files from this list are from Galaga_V3.2-251103-2121
 
+# AAL
+vendor/lib64/libaal_key.so
+vendor/lib64/libaal_sec.so
+vendor/lib64/mt6878/libaal_cust_func.so;SYMLINK=vendor/lib64/libaal_cust_func.so
+vendor/lib64/mt6878/libaalservice.so;SYMLINK=vendor/lib64/libaalservice.so
+
 # Audio
 vendor/lib64/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib64/hw/audio.primary.mt6878.so
 vendor/lib64/hw/audio.r_submix.mediatek.so;SYMLINK=vendor/lib64/hw/audio.r_submix.mt6878.so
