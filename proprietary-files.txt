@@ -1093,6 +1093,11 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.5.so
 # Native public libraries
 vendor/etc/public.libraries.txt
 
+# NTF
+vendor/bin/ntf-service
+vendor/etc/init/init.ntf.rc
+vendor/lib64/libntf.so
+
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram-service
 vendor/bin/nvram_daemon
