@@ -1,0 +1,5 @@
+# Audio
+aaudio.mmap_policy=2
+aaudio.mmap_exclusive_policy=2
+ro.vendor.mtk_hifiaudio_support=1
+ro.vendor.mtk_audio_tuning_tool_ver=V1

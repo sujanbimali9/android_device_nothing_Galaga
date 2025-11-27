@@ -114,6 +114,9 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 BOARD_USES_METADATA_PARTITION := true
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6878
 
@@ -123,6 +126,9 @@ BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.mt6878
 TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 TARGET_USERIMAGES_USE_F2FS := true
+
+# VINTF
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/vintf/manifest.xml
 
 # Inherit the proprietary files
 include vendor/nothing/Galaga/BoardConfigVendor.mk
