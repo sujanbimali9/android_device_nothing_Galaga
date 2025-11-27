@@ -1,5 +1,7 @@
 # MTK connectivity .rc configure
 
+import /vendor/etc/init/hw/init_conninfra.rc
+
 on post-fs-data
 
 
