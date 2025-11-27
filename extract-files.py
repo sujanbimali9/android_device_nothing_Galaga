@@ -32,6 +32,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+'vendor/bin/hw/android.hardware.security.keymint@3.0-service.trustonic': blob_fixup()
+        .replace_needed('android.hardware.security.keymint-V3-ndk.so', 'android.hardware.security.keymint-V4-ndk.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
