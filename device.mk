@@ -90,6 +90,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
+# FastbootD
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot-service.example_recovery \
+    fastbootd
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
