@@ -183,6 +183,16 @@ vendor/firmware/soc7_0_ram_bt_1_1_hdr.bin
 vendor/firmware/soc7_0_ram_bt_1a_1_hdr.bin
 vendor/firmware/soc7_0_ram_bt_1b_1_hdr.bin
 
+# Display
+vendor/lib64/libion_mtk.so
+vendor/lib64/libion_ulit.so
+vendor/lib64/libpixelflinger.so
+vendor/firmware/FT3683G_Conf_MultipleTest_BOE.ini
+vendor/firmware/FT3683G_Conf_MultipleTest_VXN.ini
+vendor/firmware/ft3683g_boe.bin
+vendor/firmware/ft3683g_vxn.bin
+vendor/firmware/valhall-1691526.wa
+
 # DRM (Widevine)
 vendor/apex/com.google.android.widevine.nonupdatable.apex
 vendor/lib64/liboemcrypto.so
