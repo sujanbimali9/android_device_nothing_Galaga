@@ -146,4 +146,14 @@
         <fqname>IMtkRadioExVoice/slot1</fqname>
         <fqname>IMtkRadioExVoice/slot2</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.trustonic.tee</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::ITee/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.trustonic.tee.tui</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ITui/default</fqname>
+    </hal>
 </manifest>
