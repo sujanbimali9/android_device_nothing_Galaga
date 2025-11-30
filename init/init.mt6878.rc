@@ -1361,3 +1361,14 @@ on property:dev.mnt.blk.data=sdc84 && property:sys.otg.enable=1
     write /sys/dev/block/${sys.otg.devid}/queue/iosched/read_expire 100
     write /sys/dev/block/${sys.otg.devid}/queue/iosched/writes_starved 10
     write /dev/sys/block/by-name/userdata/queue/read_ahead_kb 2048
+
+# Logger
+service boot_log /system/bin/logcat -b all -D -f /metadata/boot_log.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+on boot
+    start boot_log
