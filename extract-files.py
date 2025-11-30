@@ -48,6 +48,8 @@ blob_fixups: blob_fixups_user_type = {
 
    'vendor/lib64/libpqconfig.so': blob_fixup()
         .replace_needed('android.hardware.sensors-V2-ndk.so', 'android.hardware.sensors-V3-ndk.so'),
+   ('vendor/lib64/libaaa_afassist_V2.so', 'vendor/lib64/mt6878/lib3a.ae.so', 'vendor/lib64/mt6878/lib3a.af.core.so', 'vendor/lib64/libaaa_afassistctrl.so'): blob_fixup()
+        .add_needed('libshim_camera.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
