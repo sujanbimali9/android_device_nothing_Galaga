@@ -84,6 +84,27 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
      'vendor/lib64/mt6878/libmtkcam_hal_aidl_common.so': blob_fixup()
         .replace_needed('android.hardware.camera.common-V2-ndk.so', 'android.hardware.camera.common-V1-ndk.so'),
+     ('vendor/bin/hw/mt6878/android.hardware.graphics.allocator-V2-service-mediatek.mt6878',
+     'vendor/lib64/egl/mt6878/libGLES_mali.so',
+     'vendor/lib64/hw/mt6878/android.hardware.graphics.allocator-V2-mediatek.so',
+     'vendor/lib64/hw/mt6878/android.hardware.graphics.mapper@4.0-impl-mediatek.so',
+     'vendor/lib64/hw/mt6878/mapper.mediatek.so',
+     'vendor/lib64/libaimemc.so',
+     'vendor/lib64/libcodec2_fsr.so',
+     'vendor/lib64/libcodec2_vpp_AIMEMC_plugin.so',
+     'vendor/lib64/libcodec2_vpp_AISR_plugin.so',
+     'vendor/lib64/libmtkcam_grallocutils_aidlv1helper.so',
+     'vendor/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so',
+     'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so',
+     'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V3-ndk.so',
+     'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V4-ndk.so',
+     'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so'): blob_fixup()
+        .replace_needed('android.hardware.graphics.common-V4-ndk.so', 'android.hardware.graphics.common-V6-ndk.so')
+        .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so'),
+     'vendor/lib64/mt6878/libmtkcam_grallocutils.so': blob_fixup()
+        .replace_needed('libui.so', 'libui-v34.so')
+        .replace_needed('android.hardware.graphics.common-V4-ndk.so', 'android.hardware.graphics.common-V6-ndk.so')
+        .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
