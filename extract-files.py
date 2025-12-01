@@ -82,6 +82,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libnativewindow.so'),
      'vendor/lib64/libnvram.so': blob_fixup()
         .add_needed('libbase_shim.so'),
+     'vendor/lib64/mt6878/libmtkcam_hal_aidl_common.so': blob_fixup()
+        .replace_needed('android.hardware.camera.common-V2-ndk.so', 'android.hardware.camera.common-V1-ndk.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
