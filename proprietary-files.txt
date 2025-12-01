@@ -732,6 +732,7 @@ vendor/lib64/libarcsoft_super_night_raw.so
 vendor/lib64/libarcsoft_watermark.so
 
 # Camera configs
+vendor/etc/camera/sdk_params_front_bokeh.json
 vendor/etc/camera/Algomark/AJensonPro-Semibold.otf
 vendor/etc/camera/anc/sat_mecp.bin
 vendor/etc/camera/anc_yuv_svq/supervq_model
@@ -885,6 +886,8 @@ vendor/etc/camera/superiq_model_rear_tele
 vendor/etc/camera/superiq_model_rear_uw
 vendor/etc/camera/vidhance.lic
 vendor/etc/camera/vidhance_calibration
+vendor/etc/default_pd_calibration.bin
+vendor/etc/bh3.dla
 
 # Camera firmware
 vendor/firmware/lib3a.ccu
@@ -1063,6 +1066,9 @@ vendor/etc/vintf/manifest/arm.mali.platform-mediatek.xml
 vendor/etc/vintf/manifest/manifest_allocator.xml
 vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 vendor/etc/vintf/manifest/mapper.mediatek.xml
+vendor/etc/meow.cfg
+vendor/etc/bh3.dla
+vendor/etc/genshin.dla
 vendor/etc/mali_platform.config
 vendor/firmware/mali_csffw.bin
 vendor/lib64/egl/libGLES_meow.so
@@ -1086,8 +1092,10 @@ vendor/lib64/libgralloc_extra.so
 vendor/lib64/libgralloc_metadata.so
 vendor/lib64/libgralloctypes_mtk.so
 vendor/lib64/libladder.so
+vendor/lib64/libappgamepq.so
 vendor/lib64/libmtkgpuserv.so
 vendor/lib64/libsilkybrightnesscore.so
+vendor/lib64/libmtkgpuservsdk_vendor.so
 vendor/lib64/mt6878/arm.graphics-V4-ndk.so;SYMLINK=vendor/lib64/arm.graphics-V4-ndk.so
 vendor/lib64/mt6878/arm.mali.platform-V2-ndk.so;SYMLINK=vendor/lib64/arm.mali.platform-V2-ndk.so
 vendor/lib64/mt6878/libarm_egl_properties_sysprop.so;SYMLINK=vendor/lib64/libarm_egl_properties_sysprop.so
@@ -1377,6 +1385,7 @@ vendor/bin/hw/vendor.noth.hardware.sensor.sensor_extension-service
 vendor/etc/init/vendor.noth.hardware.sensor.sensor_extension-service.rc
 vendor/etc/vintf/manifest/vendor.noth.hardware.sensor.sensor_extension-service.xml
 vendor/firmware/remoteproc_scp
+vendor/lib64/hw/sensors.dynamic_sensor_hal.so
 vendor/lib64/hw/sensors.mediatek.V2.0.so;SYMLINK=vendor/lib64/hw/sensors.mt6878.so
 vendor/lib64/libhfmanager.so
 vendor/lib64/libhfmanagerwrapper.so
