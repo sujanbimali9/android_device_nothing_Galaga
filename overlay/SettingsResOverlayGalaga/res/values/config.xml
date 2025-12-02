@@ -16,4 +16,7 @@
 
     <!-- Show battery cycle count -->
     <bool name="config_show_battery_cycle_count" translatable="false">true</bool>
+
+    <!-- Device marketname -->
+    <string name="def_device_name_simple">CMF by Nothing Phone 2 Pro</string>
 </resources>
