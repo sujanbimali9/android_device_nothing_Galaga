@@ -129,6 +129,16 @@ ro.vendor.mtk_ovl_bringup=0
 ro.vendor.mtk_prefer_64bit_proc=1
 ro.vendor.composer_version=3.2
 
+# IMS
+persist.vendor.mtk.volte.enable=1
+persist.vendor.mtk_ct_volte_support=3
+persist.vendor.mtk_dynamic_ims_switch=1
+persist.vendor.mtk_wfc_support=1
+persist.vendor.viwifi_support=1
+ro.vendor.md_auto_setup_ims=1
+ro.vendor.mtk_data_config=1
+ro.vendor.vt_hevc_support=1
+
 # Keystore
 ro.hardware.kmsetkey=trustonic
 

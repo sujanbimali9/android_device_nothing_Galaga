@@ -23,16 +23,18 @@ namespace_imports = [
     'hardware/mediatek/libaedv',
 ]
 
-
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
     return f'{lib}_{partition}' if partition == 'vendor' else None
 
 
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
+    'vendor.mediatek.hardware.videotelephony-v1-ndk': lib_fixup_vendor_suffix,
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'system_ext/lib64/libimsma.so': blob_fixup()
+        .replace_needed('libsink.so', 'libsink-mtk.so'),
     'vendor/bin/hw/android.hardware.security.keymint@3.0-service.trustonic': blob_fixup()
         .replace_needed('android.hardware.security.keymint-V3-ndk.so', 'android.hardware.security.keymint-V3-ndk-v34.so'),
     'vendor/bin/hw/android.hardware.graphics.composer@3.1-service': blob_fixup()
