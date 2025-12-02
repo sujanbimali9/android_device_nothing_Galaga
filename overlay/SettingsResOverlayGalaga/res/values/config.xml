@@ -19,4 +19,7 @@
 
     <!-- Device marketname -->
     <string name="def_device_name_simple">CMF by Nothing Phone 2 Pro</string>
+
+    <!-- The radius of the enrollment progress bar, in DP. -->
+    <integer name="config_udfpsEnrollProgressBar" translatable="false">92</integer>
 </resources>
