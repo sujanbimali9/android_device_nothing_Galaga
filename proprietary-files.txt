@@ -177,8 +177,10 @@ vendor/bin/init.board_id.sh
 vendor/etc/init/hw/init.board_id.rc
 
 # Bluetooth (Driver)
+vendor/etc/init/init.bt_drv.rc
 vendor/lib64/libbt-vendor.so
 vendor/lib64/libbluetooth_mtk.so
+vendor/lib64/libbluetooth_mtk_pure.so
 
 # Bluetooth (Firmware)
 vendor/firmware/BT_FW.cfg
