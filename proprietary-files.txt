@@ -895,6 +895,7 @@ vendor/firmware/lib3a.ccu
 vendor/firmware/lib3a.ccu_dummy
 
 # Camera parameter database
+vendor/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db;MAKE_COPY_RULE_ONLY
 vendor/bin/crossbuild/DataSet/SQLiteModule/db/mt6878/ParameterDB.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/ParameterDB.db;MAKE_COPY_RULE_ONLY
 vendor/bin/crossbuild/DataSet/SQLiteModule/db/mt6878/sw_top_control_data.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/sw_top_control_data.db;MAKE_COPY_RULE_ONLY
 vendor/bin/crossbuild/DataSet/SQLiteModule/db/mt6878/top_control_data.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/top_control_data.db;MAKE_COPY_RULE_ONLY
