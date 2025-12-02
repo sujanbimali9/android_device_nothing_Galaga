@@ -1536,6 +1536,15 @@ vendor/lib64/vendor.trustonic.tee.tui@1.0.so
 vendor/lib64/vendor.trustonic.tee@1.0.so
 vendor/lib64/vendor.trustonic.tee@1.1.so
 
+# Vibrator (Richtap)
+vendor/etc/aac/ID05-2_6kHz.txt
+vendor/etc/aac/ID06-2_6kHz.txt
+vendor/etc/aac/ID07-2_6kHz.txt
+vendor/etc/aac/ID08-2_6kHz.txt
+vendor/etc/aac/ID09-2_6kHz.txt
+vendor/etc/aac_richtap.config
+vendor/lib64/libaacvibrator.so
+
 # Vibrator
 vendor/firmware/haptic_config.bin
 
