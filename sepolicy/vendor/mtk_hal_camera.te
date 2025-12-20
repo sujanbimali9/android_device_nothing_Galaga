@@ -1,0 +1,1 @@
+allow mtk_hal_camera vendor_data_file:file r_file_perms;
