@@ -16,6 +16,18 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_VIPERFX := false
+
+AXION_CAMERA_REAR_INFO := 50,50,8
+AXION_CAMERA_FRONT_INFO := 42
+
+AXION_MAINTAINER := SUJAN
+
+TARGET_SUPPORTED_REFRESH_RATES := 60,90,120
+
+AXION_PROCESSOR := Mediatek_Dimensity_7300_Pro_5G
+
 PRODUCT_NAME := lineage_Galaga
 PRODUCT_DEVICE := Galaga
 PRODUCT_MANUFACTURER := Nothing

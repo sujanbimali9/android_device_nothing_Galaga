@@ -264,6 +264,10 @@ telephony.active_modems.max_count=2
 vendor.rild.libargs=-d /dev/ttyC0
 vendor.rild.libpath=mtk-ril.so
 
+# ScrollOptimizer
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=1
+
 # MVPU
 ro.vendor.mtk_mvpu_security_support=0
 
