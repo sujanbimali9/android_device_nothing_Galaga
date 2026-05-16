@@ -1,0 +1,21 @@
+# fastboot-info for lineage_Galaga
+version 1
+flash boot
+flash dtbo
+flash init_boot
+flash vendor_boot
+flash --apply-vbmeta vbmeta
+flash vbmeta_system
+flash vbmeta_vendor
+reboot fastboot
+update-super
+flash system
+flash product
+flash system_ext
+flash vendor
+flash odm
+flash system_dlkm
+flash vendor_dlkm
+flash odm_dlkm
+if-wipe erase userdata
+if-wipe erase metadata
