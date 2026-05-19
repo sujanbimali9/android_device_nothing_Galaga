@@ -1,0 +1,5 @@
+allow system_server proc_gpufreqv2:file read;
+allow system_server sysfs_dvfsrc_devfreq:file read;
+allow system_server sysfs_ged:file rw_file_perms;
+allow system_server sysfs_dvfsrc_devfreq:file rw_file_perms;
+allow system_server cpu_dma_latency_device:chr_file rw_file_perms;

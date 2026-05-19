@@ -247,3 +247,6 @@
 
 #IStability AIDL partition
 /dev/block/platform/soc/112b0000.ufshci/by-name/binfo   0660    system     system
+
+# PMQoS cpu_dma_latency for AxBurstEngine
+/dev/cpu_dma_latency        0664   system     system
