@@ -248,5 +248,13 @@
 #IStability AIDL partition
 /dev/block/platform/soc/112b0000.ufshci/by-name/binfo   0660    system     system
 
-# PMQoS cpu_dma_latency for AxBurstEngine
+# AxBurstEngine
 /dev/cpu_dma_latency        0664   system     system
+/sys/devices/system/cpu/cpufreq/policy0 scaling_min_freq 0664 system system
+/sys/devices/system/cpu/cpufreq/policy0 scaling_max_freq 0664 system system
+/sys/devices/system/cpu/cpufreq/policy4 scaling_min_freq 0664 system system
+/sys/devices/system/cpu/cpufreq/policy4 scaling_max_freq 0664 system system
+/sys/devices/platform/soc/1c00f000.dvfsrc/mtk-dvfsrc-devfreq/devfreq/mtk-dvfsrc-devfreq/userspace set_freq 0664 system system
+/sys/kernel/ged/hal timer_base_dvfs_margin 0664 system system
+/sys/kernel/ged/hal loading_base_dvfs_step 0664 system system
+/sys/kernel/cm_mgr dbg_cm_mgr 0664 system system

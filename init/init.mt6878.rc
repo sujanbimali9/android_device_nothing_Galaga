@@ -820,22 +820,6 @@ on boot
     chmod 0664 /sys/kernel/ged/hal/timer_base_dvfs_margin
     chown system system /sys/kernel/ged/hal/loading_base_dvfs_step
     chmod 0664 /sys/kernel/ged/hal/loading_base_dvfs_step
-    chown system system /sys/kernel/ged/hal/gpu_boost_level
-    chmod 0664 /sys/kernel/ged/hal/gpu_boost_level
-    chown system system /sys/kernel/ged/hal/custom_boost_gpu_freq
-    chmod 0664 /sys/kernel/ged/hal/custom_boost_gpu_freq
-    chown system system /sys/kernel/ged/hal/custom_upbound_gpu_freq
-    chmod 0664 /sys/kernel/ged/hal/custom_upbound_gpu_freq
-    chown system system /sys/kernel/ged/hal/dvfs_loading_mode
-    chmod 0664 /sys/kernel/ged/hal/dvfs_loading_mode
-    chown system system /sys/kernel/ged/hal/dcs_mode
-    chmod 0664 /sys/kernel/ged/hal/dcs_mode
-
-    # Mali devfreq fallback (AxBurstEngine)
-    chown system system /sys/class/devfreq/13000000.mali/min_freq
-    chmod 0664 /sys/class/devfreq/13000000.mali/min_freq
-    chown system system /sys/class/devfreq/13000000.mali/max_freq
-    chmod 0664 /sys/class/devfreq/13000000.mali/max_freq
 
     # MTK CCI freq (AxBurstEngine)
     chown system system /sys/kernel/cm_mgr/dbg_cm_mgr
@@ -843,6 +827,15 @@ on boot
 
     chown system system /dev/cpu_dma_latency
     chmod 0664 /dev/cpu_dma_latency
+
+    chown system system /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+    chmod 0664 /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+    chown system system /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
+    chmod 0664 /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
+    chown system system /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq
+    chmod 0664 /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq
+    chown system system /sys/devices/system/cpu/cpufreq/policy4/scaling_max_freq
+    chmod 0664 /sys/devices/system/cpu/cpufreq/policy4/scaling_max_freq
 
 # GPU freq v2 (AxBurstEngine)
     chown system system /proc/gpufreqv2/fix_target_opp_index
