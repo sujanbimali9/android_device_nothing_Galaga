@@ -69,7 +69,8 @@ ro.vendor.mtk_log_hide_gps=0
 
 # Graphic
 debug.mediatek.disp_decompress=1
-debug.renderengine.backend=skiaglthreaded
+debug.renderengine.backend=skiavkthreaded
+debug.hwui.renderer=skiavk
 ro.hardware.egl=mali
 ro.hardware.gralloc=common
 ro.hardware.hwcomposer=mtk_common
