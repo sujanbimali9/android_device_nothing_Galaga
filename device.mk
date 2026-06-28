@@ -295,13 +295,16 @@ PRODUCT_COPY_FILES += \
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 34
 
-# Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/mediatek \
     hardware/google/pixel \
     hardware/mediatek/libmtkperf_client \
-    hardware/google/interfaces
+    hardware/google/interfaces \
+    hardware/google/pixel/pixelstats \
+    hardware/google/pixel/usb \
+    hardware/google/pixel/power-libperfmgr \
+    hardware/google/pixel/thermal
 
 # Thermal
 PRODUCT_PACKAGES += \
