@@ -41,6 +41,8 @@ blob_fixups: blob_fixups_user_type = {
         .apktool_patch('ims-patches'),
     'system_ext/lib64/libimsma.so': blob_fixup()
         .replace_needed('libsink.so', 'libsink-mtk.so'),
+    'system_ext/lib64/libsink-mtk.so': blob_fixup()
+        .add_needed('libaudiotrack_shim.so'),
     'vendor/bin/hw/mt6878/camerahalserver': blob_fixup()
         .add_needed('libcamera_metadata_ntshim.so'),
     'vendor/lib64/hw/mt6878/vendor.mediatek.hardware.pq_aidl-impl.so': blob_fixup()
