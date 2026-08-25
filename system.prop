@@ -1,0 +1,8 @@
+ro.mist.display=1080 x 2400, 120 hz
+ro.mist.battery=5000mah
+ro.mist.soc=Mediatek Dimensisty 7300 pro 5G
+ro.mist.camera=50MP + 50MP + 8MP
+ro.mist.front=16MP
+ro.mist.platform=MT6878
+ro.mist.screen=6.68' Amoled
+ro.mist.device.name=CMF Phone 2 PRO

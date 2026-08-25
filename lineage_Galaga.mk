@@ -16,6 +16,15 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Flags
+MISTOS_MAINTAINER := SUJAN
+WITH_GMS := true
+TARGET_USES_MINI_GAPPS := true
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_HAS_UDFPS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
+
 PRODUCT_NAME := lineage_Galaga
 PRODUCT_DEVICE := Galaga
 PRODUCT_MANUFACTURER := Nothing
