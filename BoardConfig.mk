@@ -114,7 +114,7 @@ ODM_MANIFEST_ROW_FILES := $(DEVICE_PATH)/vintf/manifest_tms.xml
 ODM_MANIFEST_TUR_FILES := $(DEVICE_PATH)/vintf/manifest_tms.xml
 
 # Partitions
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/voltage/config/BoardConfigReservedSize.mk
 BOARD_FLASH_BLOCK_SIZE := 4096
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
