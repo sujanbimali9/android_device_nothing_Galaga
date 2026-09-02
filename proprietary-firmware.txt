@@ -8,7 +8,7 @@ connsys_wifi.img;AB
 dpm.img;AB
 gpueb.img;AB
 gz.img;AB
-lk.img;AB|a80bc9b8f732d185a7a0496104a732e89e4b0b6e
+lk.img;AB|652f3505c181341995df59e1805541809cfade05
 logo.img;AB
 mcf_ota.img;AB
 mcupm.img;AB
