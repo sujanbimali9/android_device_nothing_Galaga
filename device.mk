@@ -249,7 +249,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.pixel-libperfmgr
+    android.hardware.power-service.lineage-libperfmgr
 
 PRODUCT_PACKAGES += \
     init.mt6878.power.rc
@@ -325,13 +325,13 @@ PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/mediatek \
     hardware/google/pixel \
+    hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek/libmtkperf_client \
     hardware/google/interfaces
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal-service.pixel \
-    thermal_symlinks
+    android.hardware.thermal-service.mediatek
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
