@@ -38,7 +38,7 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .regex_replace('start', 'enable'),
     'system_ext/priv-app/ImsService/ImsService.apk': blob_fixup()
-        .apktool_patch('ims-patches'),
+        .apktool_patch('blob-patches/ims-patches'),
     'system_ext/lib64/libimsma.so': blob_fixup()
         .replace_needed('libsink.so', 'libsink-mtk.so'),
     'vendor/lib64/hw/mt6878/vendor.mediatek.hardware.pq_aidl-impl.so': blob_fixup()
@@ -125,6 +125,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('NtCamAlgoCapacity', 'CameraServiceCapacity'),
     'vendor/lib64/libntcamskia.so' : blob_fixup()
         .add_needed('libnativewindow.so'),
+    'system_ext/priv-app/NTCamera/NTCamera.apk': blob_fixup()
+        .apktool_patch('blob-patches/ntcam-patches'),
     'system_ext/lib64/libofflineproc_jni_aidl.so': blob_fixup()
         .clear_symbol_version('AHardwareBuffer_describe')
         .clear_symbol_version('AHardwareBuffer_lock')
