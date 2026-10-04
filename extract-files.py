@@ -39,6 +39,13 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('start', 'enable'),
     'system_ext/lib64/libimsma.so': blob_fixup()
         .replace_needed('libsink.so', 'libsink-mtk.so'),
+    'system_ext/lib64/libofflineproc_jni_aidl.so': blob_fixup()
+        .remove_needed('libgralloc_extra_sys.so')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
+    'system_ext/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so': blob_fixup()
+        .replace_needed('android.hardware.graphics.common-V6-ndk.so','android.hardware.graphics.common-V7-ndk.so'),
     'system_ext/priv-app/ImsService/ImsService.apk': blob_fixup()
         .apktool_patch('ims-patches'),
     (
@@ -58,6 +65,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.graphics.common-V4-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
     'vendor/etc/displayconfig/display_id_4627039422300187648.xml': blob_fixup()
         .regex_replace('<transitionPoint>0.6</transitionPoint>', '<transitionPoint>0.840537</transitionPoint>'),
+    'vendor/etc/init/vendor.noth.hardware.camera-service.rc': blob_fixup()
+        .regex_replace('NtCamAlgoCapacity', 'CameraServiceCapacity'),
     'vendor/lib64/hw/audio.primary.mediatek.so': blob_fixup()
         .replace_needed('libalsautils.so', 'libalsautils-stock.so')
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so')
@@ -80,12 +89,27 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .add_needed('liblog.so'),
     (
+        'vendor/lib64/libAncHumanBeauty.so',
+        'vendor/lib64/libwa_rtdof.so',
+    ): blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
+    (
         'vendor/lib64/libmmlpqImpl.so',
         'vendor/lib64/libpqxmlflagparser.so',
         'vendor/lib64/libpqxmlparser.so',
         'vendor/lib64/libsilkybrightnesscore.so',
     ): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    'vendor/lib64/libmorpho_RapidEffect.so': blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lockPlanes')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
     (
         'vendor/lib64/libmtkcam_grallocutils.so',
         'vendor/lib64/libmtkcam_grallocutils_aidlv1helper.so',
@@ -105,6 +129,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
     'vendor/lib64/libneuron_adapter_mc.so': blob_fixup()
         .clear_symbol_version('AHardwareBuffer_describe'),
+    'vendor/lib64/libntcamskia.so': blob_fixup()
+        .add_needed('libnativewindow.so'),
     (
         'vendor/lib64/libnvram.so',
         'vendor/lib64/libtflite_mtk.so',
@@ -122,6 +148,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_unlock'),
     'vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so': blob_fixup()
         .replace_needed('android.hardware.audio.common-V1-ndk.so', 'android.hardware.audio.common-V2-ndk.so'),
+    'vendor/lib64/vendor.noth.hardware.camera-service-impl.so': blob_fixup()
+        .add_needed('libui_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
