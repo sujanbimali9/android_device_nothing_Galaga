@@ -1,2 +1,3 @@
 # Fingerprint
 vendor_internal_prop(vendor_fingerprint_prop)
+vendor_public_prop(vendor_nt_camera_prop)
