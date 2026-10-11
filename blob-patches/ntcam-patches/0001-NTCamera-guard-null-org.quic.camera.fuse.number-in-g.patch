@@ -1,7 +1,7 @@
 From 536d4cd715d0dd6384efca1c27c61c17171ca5cb Mon Sep 17 00:00:00 2001
 From: Sujan Bimali <sujanbimali999@gmail.com>
 Date: Fri, 2 Oct 2026 03:25:40 +0545
-Subject: [PATCH] NTCamera: guard null org.quic.camera.fuse.number in
+Subject: [PATCH 1/2] NTCamera: guard null org.quic.camera.fuse.number in
  getCalibrationData
 
 ---
