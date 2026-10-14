@@ -12,6 +12,7 @@ binder_call(cameraserver, vendor_hal_camera_default)
 binder_call(vendor_hal_camera_default, mtk_hal_camera)
 binder_call(mtk_hal_camera, vendor_hal_camera_default)
 binder_call(vendor_hal_camera_default, platform_app)
+binder_call(vendor_hal_camera_default, platform_app_36)
 
 get_prop(vendor_hal_camera_default, camera_config_prop)
 

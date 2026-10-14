@@ -1,5 +1,6 @@
 hal_attribute_service(vendor_hal_noth_camera, vendor_hal_noth_camera_service)
 hal_client_domain(platform_app, vendor_hal_noth_camera)
+hal_client_domain(platform_app_36, vendor_hal_noth_camera)
 hal_client_domain(system_app, vendor_hal_noth_camera)
 hal_client_domain(system_server, vendor_hal_noth_camera)
 binder_call(vendor_hal_noth_camera_client, vendor_hal_noth_camera_server)
