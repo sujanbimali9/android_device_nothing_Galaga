@@ -4,3 +4,9 @@ allow platform_app_36 apusys_device:chr_file rw_file_perms;
 
 allow platform_app privapp_data_file:file { execute };
 allow platform_app_36 privapp_data_file:file { execute };
+
+# Faceunlock
+get_prop(platform_app, vendor_face_config_prop)
+set_prop(platform_app, system_face_config_prop)
+allow platform_app face_vendor_data_file:dir create_dir_perms;
+allow platform_app face_vendor_data_file:file create_file_perms;
