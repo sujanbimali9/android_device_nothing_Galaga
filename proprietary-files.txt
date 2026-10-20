@@ -1315,8 +1315,8 @@ system/etc/sysconfig/nothing-hiddenapi-package-allowlist.xml
 system/lib64/libnelib.so
 system_ext/etc/permissions/privapp-permissions-NothingExperience.xml
 system_ext/etc/permissions/privapp-permissions-NTCamera.xml
-system_ext/priv-app/NTCamera/NTCamera.apk
-system_ext/priv-app/NTGallery/NTGallery.apk
+system_ext/priv-app/NTCamera/NTCamera.apk;OVERRIDES=Camera2,Aperture
+system_ext/priv-app/NTGallery/NTGallery.apk;OVERRIDES=Glimpse,Gallery,Gallery3D,GalleryNew3D,Gallery2
 system_ext/priv-app/NothingExperience/NothingExperience.apk
 
 # NTF
