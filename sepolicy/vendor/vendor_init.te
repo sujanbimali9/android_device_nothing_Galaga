@@ -1,1 +1,2 @@
 allow vendor_init proc_touchpanel:file { read write open };
+set_prop(vendor_init, vendor_nothing_newAAC_prop)
