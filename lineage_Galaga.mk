@@ -16,6 +16,11 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
+TARGET_CUSTOM_UDFPS := true
+WITH_GMS := true
+WITH_PIXEL_LAUNCHER := false
+TARGET_USE_GPHOTOS := true
+
 PRODUCT_NAME := lineage_Galaga
 PRODUCT_DEVICE := Galaga
 PRODUCT_MANUFACTURER := Nothing

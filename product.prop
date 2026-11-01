@@ -31,3 +31,5 @@ remote_provisioning.strongbox.rkp_only=1
 
 # NT
 ro.product.brand_device_name=CMF by Nothing Phone 2 Pro
+
+ro.lunaris.maintainer=SUJAN
