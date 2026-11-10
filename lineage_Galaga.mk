@@ -15,6 +15,10 @@ $(call inherit-product, device/nothing/Galaga/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
+RISING_MAINTAINER := SUJAN
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
+TARGET_HAS_UDFPS := true
 
 PRODUCT_NAME := lineage_Galaga
 PRODUCT_DEVICE := Galaga
@@ -25,9 +29,11 @@ PRODUCT_MODEL := A001
 PRODUCT_GMS_CLIENTID_BASE := android-nothing
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Mediatek Dimensity 7300 Pro 5G" \
+    RisingMaintainer="SUJAN" \
     BuildDesc="sys_mssi_64_64only_ww_armv82-user 16 BP2A.250605.031.A3 2609281137 release-keys" \
     BuildFingerprint=Nothing/Galaga/Galaga:16/BP2A.250605.031.A3/2609281137:user/release-keys \
-	BuildSystemFingerprint=alps/sys_mssi_64_64only_ww_armv82/mssi_64_64only_ww_armv82:16/BP2A.250605.031.A3/2609281137:user/release-keys \
+	  BuildSystemFingerprint=alps/sys_mssi_64_64only_ww_armv82/mssi_64_64only_ww_armv82:16/BP2A.250605.031.A3/2609281137:user/release-keys \
     DeviceName=Galaga \
     DeviceProduct=Galaga \
     SystemDevice=Galaga \
